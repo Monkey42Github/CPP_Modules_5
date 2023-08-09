@@ -1,0 +1,18 @@
+#ifndef INTERN_HPP
+# define INTERN_HPP
+
+# include "Form.hpp"
+
+class Intern
+{
+    private:
+
+    public:
+        Intern();
+        Intern(const Intern &src);
+        ~Intern();
+        Intern &operator=(const Intern &src);
+
+        Form *makeForm(const std::string form, const std::string target);
+};
+#endif
